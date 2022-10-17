@@ -22,3 +22,5 @@ exports.send = (res, url, func) => {
         failure(res, error)
     }
 }
+
+console.log('hi');

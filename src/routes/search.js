@@ -6,3 +6,4 @@ const controller = require("../controllers/searchController")
 router.get('/search/:device', controller.device)
 
 module.exports = router
+console.log('hi');
