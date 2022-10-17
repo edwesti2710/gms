@@ -1,8 +1,4 @@
 const express = require('express')
-const cors = require('cors');
-app.use(cors({
-    origin: 'https://www.google.com'
-}));
 require('dotenv').config()
 const app = express()
 const swaggerUi = require('swagger-ui-express')
