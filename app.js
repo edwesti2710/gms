@@ -8,6 +8,8 @@ const swaggerFile = require('./swagger-output.json')
 app.use('/doc', swaggerUi.serve, swaggerUi.setup(swaggerFile))
 
 app.use('/', require('./src/routes'))
+const PORT = process.env.PORT || 3000
+
 
 var allowlist = ['http://example1.com', 'http://example2.com']
 var corsOptionsDelegate = function (req, callback) {
@@ -28,7 +30,6 @@ app.listen(80, function () {
     console.log('CORS-enabled web server listening on port 80')
 })
 
-const PORT = process.env.PORT || 3000
 
 async function start() {
     try {
