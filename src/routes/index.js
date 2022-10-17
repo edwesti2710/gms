@@ -12,5 +12,5 @@ router.use("/", dealsRoutes);
 router.use("/", topRoutes);
 router.use("/", glossaryRoutes);
 router.use("/", searchRoutes);
-router.use("*", 'hi guys');
+
 module.exports = router

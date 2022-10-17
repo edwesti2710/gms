@@ -6,4 +6,3 @@ const controller = require("../controllers/topController")
 router.get('/top', controller.list)
 
 module.exports = router
-console.log('hi');
